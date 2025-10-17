@@ -1,0 +1,37 @@
+% sections/scheduling.tex
+
+\section{研究进度安排}
+
+\subsection{总体时间安排}
+\begin{itemize}
+	\item \textbf{研究周期：} 2025年9月-2026年6月（共3个季度）
+	\item \textbf{初稿完成：} 2026年6月（第3季度末）
+	\item \textbf{论文投稿：} 2026年6月-2026年12月
+	\item \textbf{论文接收：} 2027年初
+\end{itemize}
+
+\subsection{近期季度详细安排}
+
+% 添加时间线图表
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[scale=0.8, transform shape]
+		% 时间轴
+		\draw[->, line width=1.5pt] (0,0) -- (12,0);
+		\foreach \x/\month in {0/9月, 3/12月, 6/3月, 9/6月}
+		\draw (\x,0.2) -- (\x,-0.2) node[below] {\month};
+		
+		% 里程碑
+		\node[draw, fill=blue!20, align=center] at (0.5,1) {模型代码\\完成};
+		\node[draw, fill=green!20, align=center] at (3.5,1.5) {大规模仿真\\完成};
+		\node[draw, fill=red!20, align=center] at (6.5,1) {分析工作\\完成};
+		\node[draw, fill=purple!20, align=center] at (9.5,1.5) {论文初稿\\完成};
+		
+		% 季度标注
+		\node[rotate=90, anchor=south] at (1.5, -1) {第1季度};
+		\node[rotate=90, anchor=south] at (4.5, -1) {第2季度};
+		\node[rotate=90, anchor=south] at (7.5, -1) {第3季度};
+		\node[rotate=90, anchor=south] at (10.5, -1) {第4季度};
+	\end{tikzpicture}
+	\caption{研究进度时间线}
+\end{figure}

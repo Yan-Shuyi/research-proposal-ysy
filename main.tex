@@ -1,0 +1,78 @@
+% main.tex
+\documentclass{ecustjournal}
+
+% ==================== 元文件信息 ====================
+\title{基于神经群体模型的大脑皮层下-皮层动态的动力学研究}
+\author{言书懿，杜老师*}
+\date{}
+
+% ==================== 封面信息设置 ====================
+\ecustlogo{figures/ECUST.jpg} % 校徽图片路径
+\reporttitle{硕士学位论文开题报告} % 报告标题
+\studentname{言书懿} % 学生姓名
+\studentid{12345678} % 学号
+\college{数学学院} % 学院
+\advisor{杜老师} % 导师
+\thesistitle{基于神经群体模型的大脑皮层下-皮层} % 论文题目
+\thesissubtitle{动态的动力学研究} % 副标题，标题过长也可用。注释该行，则该行不显示
+\proposaltime{2025年10月} % 开题时间
+
+% ==================== 页眉信息设置 ====================
+\headertitle{基于神经群体模型的大脑皮层下-皮层动态的动力学研究}
+
+\begin{document}
+	
+	% ==================== 封面 ====================
+	\makecover
+	
+	% ==================== 目录 ====================
+	\tableofcontents
+	
+	\newpage
+	% ==================== 中摘 ====================
+	\chinesetitle{基于神经群体模型的大脑皮层下-皮层动态的动力学研究}
+	\chineseauthor{言书懿，杜老师*}
+	\chineseaffiliation{华东理工大学\hspace{0.5em}数学学院}
+	% 添加目录
+	\phantomsection
+	\addcontentsline{toc}{section}{摘要}
+	\input{sections/abstract}
+	\newpage
+	
+	% ==================== 英摘 ====================
+	\englishtitle{Dynamic Study on Subcortical-Cortical Dynamics Based on Neural Mass Models}
+	\englishauthor{YAN Shuyi, DU Laoshi*}
+	\englishaffiliation{School of Mathematics, East China University of Science and Technology}
+	% 添加目录
+	\phantomsection
+	\addcontentsline{toc}{section}{Abstract}
+	\input{sections/abstract_en}
+	\newpage
+	
+	% ==================== 章节 ====================
+	\input{sections/background}
+	\newpage
+	\input{sections/review}
+	\newpage
+	\input{sections/objective}
+	\newpage
+	\input{sections/contents}
+	\newpage
+	\input{sections/roadmap}
+	\newpage
+	\input{sections/innovation}
+	\newpage
+	\input{sections/basic}
+	\newpage
+	\input{sections/scheduling}
+	\clearpage
+	
+	% ==================== 参考文献 ====================
+	% 添加到目录但不编号
+	\phantomsection
+	\addcontentsline{toc}{section}{参考文献}
+	\section*{参考文献}
+	% 参考文献内容
+	\printbibliography[heading=none] % 输出参考文献，不显示默认标题
+
+\end{document}
